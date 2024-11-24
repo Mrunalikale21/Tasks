@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbe8e8; /* Light pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="password"]:focus {
+  outline: none;
+  border-color: #f76c9e; /* Pinkish color for focus */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #f76c9e; /* Pink background for the button */
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #f2a2b4; /* Lighter pink for disabled button */
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #f64d7d; /* Darker pink on hover */
+}
+
+#password-requirements {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #666;
+}
+
+.strength-indicator {
+  height: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+#confirm-password-error {
+  color: red;
+  margin-top: 5px;
+}
+
+#password-strength.weak {
+  background-color: red;
+}
+
+#password-strength.moderate {
+  background-color: yellow;
+}
+
+#password-strength.strong {
+  background-color: green;
+}
+
+#password-requirements p {
+  color: #666;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
