@@ -1,0 +1,156 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* Featured Solutions */
+.featured-solutions {
+  text-align: center;
+  padding: 20px;
+}
+
+.solutions {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.solution {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.solution img {
+  width: 100%;
+  height: auto;
+}
+
+.solution h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Case Studies */
+.case-studies {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.case-study {
+  margin-bottom: 20px;
+}
+
+/* Blog */
+.blog {
+  padding: 20px;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+}
+
+/* Statistics */
+.statistics {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.statistics p {
+  font-size: 1.2em;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .solutions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

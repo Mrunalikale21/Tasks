@@ -5,14 +5,14 @@ const confirmPasswordError = document.getElementById('confirm-password-error');
 const submitBtn = document.getElementById('submit-btn');
 const passwordRequirements = document.getElementById('password-requirements');
 
-// Regular expressions for validation
+
 const passwordPattern = {
     weak: /.{1,5}/,  // Less than 6 characters
     moderate: /^(?=.*[a-zA-Z])(?=.*\d).{6,}$/, // At least 6 characters, with letters and numbers
     strong: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/  // At least 8 chars, 1 upper, 1 lower, 1 digit, 1 special char
 };
 
-// Update password strength
+
 passwordField.addEventListener('input', () => {
     const password = passwordField.value;
     let strength = 'weak';
@@ -36,7 +36,7 @@ passwordField.addEventListener('input', () => {
     enableSubmitButton(password, confirmPasswordField.value);
 });
 
-// Update password requirements dynamically
+
 function updatePasswordRequirements(password) {
     const requirements = passwordRequirements.querySelectorAll('p');
     
@@ -77,7 +77,7 @@ function updatePasswordRequirements(password) {
     }
 }
 
-// Confirm password validation
+
 confirmPasswordField.addEventListener('input', () => {
     if (confirmPasswordField.value !== passwordField.value) {
         confirmPasswordError.textContent = 'Passwords do not match!';
@@ -89,7 +89,7 @@ confirmPasswordField.addEventListener('input', () => {
     }
 });
 
-// Enable Submit button
+
 function enableSubmitButton(password, confirmPassword) {
     if (passwordPattern.strong.test(password) && password === confirmPassword) {
         submitBtn.disabled = false;

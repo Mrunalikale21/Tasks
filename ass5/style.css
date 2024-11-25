@@ -68,12 +68,12 @@ button {
 }
 
 button:disabled {
-  background-color: #f2a2b4; /* Lighter pink for disabled button */
+  background-color: #f2a2b4;
   cursor: not-allowed;
 }
 
 button:hover:not(:disabled) {
-  background-color: #f64d7d; /* Darker pink on hover */
+  background-color: #f64d7d; 
 }
 
 #password-requirements {
