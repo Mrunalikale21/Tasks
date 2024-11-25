@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fbe8e8; /* Light pink background */
+  background-color: #fbe8e8; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background: #ffffff; /* White background for the form */
+  background: #ffffff; 
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -52,14 +52,14 @@ input[type="password"] {
 
 input[type="password"]:focus {
   outline: none;
-  border-color: #f76c9e; /* Pinkish color for focus */
+  border-color: #f76c9e; 
 }
 
 button {
   width: 100%;
   padding: 12px;
   border: none;
-  background-color: #f76c9e; /* Pink background for the button */
+  background-color: #f76c9e; 
   color: white;
   font-size: 18px;
   border-radius: 4px;
