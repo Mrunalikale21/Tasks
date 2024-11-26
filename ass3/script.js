@@ -1,4 +1,3 @@
-// Carousel functionality
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
@@ -13,7 +12,6 @@ setInterval(() => {
   showSlide(currentSlide + 1);
 }, 5000);
 
-// Display AI Statistics dynamically
 const aiStats = [
   'Over 70% of businesses are using AI in some form.',
   'AI in healthcare is expected to save $150 billion by 2026.',
@@ -28,9 +26,8 @@ function displayStats() {
   aiStatsIndex = (aiStatsIndex + 1) % aiStats.length;
 }
 
-setInterval(displayStats, 3000);  // Change every 3 seconds
+setInterval(displayStats, 3000);  
 
-// Contact Form Validation
 function validateForm() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
